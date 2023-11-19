@@ -98,9 +98,9 @@ void Jeans::soldOut() const{
 
 void Jeans::print() const{
     if(stock)
-        std::cout<<"JeansID "<< id << " costs " << price << "$, " << "on stock " << std::endl;
+        std::cout<<"JeansID "<< id << " costs " << price << "$, color: "<< color << " on stock " << std::endl;
     else 
-        std::cout<<"JeansID "<< id << " costs " << price << "$, " << "0 stock " << std::endl;
+        std::cout<<"JeansID "<< id << " costs " << price << "$, color: "<< color << " 0 stock " << std::endl;
 }
 
 void Jeans::lastChance() const {

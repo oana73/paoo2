@@ -15,9 +15,9 @@ CargoJeans::~CargoJeans() {
  
 void CargoJeans::print() const{
     if(stock)
-        std::cout<<"JeansID "<< id << " costs " << price << "$ for size " << size << ", " << "on stock " << std::endl;
+        std::cout<<"JeansID "<< id << " costs " << price << "$ for size " << size << ", color"<< color << " on stock " << std::endl;
     else 
-        std::cout<<"JeansID "<< id << " costs " << price << "$ for size " << size << ", " << "0 stock " << std::endl;
+        std::cout<<"JeansID "<< id << " costs " << price << "$ for size " << size << ", color"<< color << " 0 stock " << std::endl;
 }
 
 void CargoJeans::soldOut() const{
@@ -25,7 +25,7 @@ void CargoJeans::soldOut() const{
 }
 
 void CargoJeans::lastChance() const {
-    std::cout<<"Last pair of cargo jeans " << id << ", color : "<< color<< ", for size "<< size <<" at " << price/0.2 << "$" << std::endl;}
+    std::cout<<"Last pair of cargo jeans " << id << ", color: "<< color<< ", for size "<< size <<" at " << price/2 << "$" << std::endl;}
     
 void CargoJeans::setColor(const char* color) {
     
